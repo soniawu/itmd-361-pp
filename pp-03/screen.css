@@ -1,0 +1,35 @@
+/* Remember that, by default, most browsers set 1em = 16px. */
+
+/* 
+  1.  Convert the base font-size listed here from pixels to ems: 
+      html { font-size: 19px; }                                  
+      target = 19, context = 16, 19/16 = 1.188                   
+*/
+html { font-size: 1.188em; }
+
+/* 
+  2.  Convert the base font-size listed here to ems, and set the line-height in ems accordingly: 
+      html { font-size: 17px; line-height: 24px; }                                               
+      This rule overrides the one in #1. Context = 16.                                           
+      font size target = 17, context = 16, 17/16 = 1.063
+      linr height target = 24, context = 17, 24/17 = 1.142
+ */
+html { font-size: 1.063em; line-height: 1.142em; }
+
+/* 
+  3.  Set the padding for this page to 12px on top and bottom, and 6px on left and right. Express in ems:
+      html { font-size: 1.125em; padding: }  
+      font size 1.125em = 1.125x16 = 18px
+      Top, Bottom taget = 12, context = 18, 12/18 = 0.0667
+      Left, right target = 6, context = 18, 6/18 = 0.333
+*/
+html { font-size: 1.125em; padding: 0.667em 0.333em; }
+
+/* 
+  4.  Consider the following CSS. Assuming a browser with its base size at 1em = 16px, how big is h2, in pixels? 
+      html { font-size: 1.125em; } figure { font-size: 0.888em; } figure h2 { font-size: 1.4375em; } 
+      font size 1.125em = 1.125x16 = 18px
+      figure font size is inherited from html, 0.888x18 = 15.984px
+      figure h2 is inherited from figure 1.4375x15.984 = 22.977px
+*/
+html { font-size: 1.125em; } figure { font-size: 0.888em; } figure h2 { font-size: 1.4375em; }
