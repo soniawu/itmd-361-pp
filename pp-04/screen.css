@@ -8,3 +8,37 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
+/* 
+  Use 18px, minor third 1.2 
+  http://www.modularscale.com/?18&px&1.2&web&text
+*/
+html {
+  font-size: 1.125em;   /* 18px  18/16=1.125 */
+  line-height: 1.778em; /* 1.2 grid line. 18/16=1.125; 1.125x19=21.375 (1 grid line); 21.375x1.5=32.063px */
+  padding: 1.222em 1em; /*  1 grid line  22px/18=1.222 18px/18=1 */
+}
+h1 {
+  font-size: 1.728em;      /* Up 3 sizes  31.104px */
+  padding-bottom: 0.707em; /* 22px 22/31.104=0.707 */
+}
+h2 {
+  font-size: 1.44em;       /*  2 size up  25.92px */
+  padding-bottom: 0.849em; /* 22px 22/25.92=0.849 */
+}
+p {
+  padding-bottom: 1.222em;  /* 22px  22/18=1.222  */
+} 
+ul {
+  padding-bottom: 1.222em; /* 22px  22/18=1.222  */
+}
+li {
+  font-size: 0.833em;  /* down one size  15px */
+  padding-left: 1.667em;  /* 25px 25/15=1.667  */
+  padding-bottom: 0.533em; /* 8px 8/15=0.533 */
+}
+li p{
+  padding-bottom: 0.533em; /* 8px 8/15=0.533 */
+}
+li:last-child {
+  padding-bottom: 0;
+}
