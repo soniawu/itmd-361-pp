@@ -28,31 +28,60 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ==== LAYOUT STYLES ==== */
 #content {
-
+  /* For step one, to set
+      display: flex;
+      flex-flow: row wrap;
+    The wrap is for later step 3.
+  */
+  display: flex;   /* step one */
+  flex-flow: row wrap;
 }
 
 #three,
 #two,
 #one {
-
+  /*  For step 2, just make the height equals the width.
+      Any number less than 33.33vm will sit them on the
+      same row.
+  */
+  width: 25vw;
+  height: 25vw;
 }
 
+/*  For step 1,
+    assign the order of the 3 items.
+    But not both. It will reverse back
+    to the original.
+*/
 #three {
-
+  order: 3;
 }
-
 #two {
-
+  order: 2;
 }
 
 #one {
-
+  order: 1;
 }
 
 @media screen and (min-width: 600px) {
-
+  /* For step 3, make the width of each item */
+  #three {
+    width: 100%;
+  }
+  #two {
+    width: 50%;
+  }
+  #one {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 800px) {
-
+  /* For step 4, set all flex-grow the same,  */
+  #three,
+  #two,
+  #one {
+    flex: 1 1 0;
+  }
 }
