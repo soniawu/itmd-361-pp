@@ -30,3 +30,4 @@ origin  git@github.com:soniawu/project-3.git (push)
 5. From within your fork of the repository on GitHub, open up a pull request. Each group member should review the request before it is merged, and then pull from the group repository to have a complete, up-to-date `README.md` file.
 
 Write the URL of your pull request here:  https://github.com/ITMD-361-project-3-sx-mj/project-3/pull/1
+Above one had conflicts, created a new one. at https://github.com/ITMD-361-project-3-sx-mj/project-3/pull/3
